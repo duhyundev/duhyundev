@@ -1,3 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+
+@font-face {
+  font-family: 'SeoulHangangM';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +15,7 @@
 body {
   border: 1px solid #c3c7ce;
   border-radius: 8px;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', 'SeoulHangangM';
   height: 100vh;
   margin: 0;
 }
