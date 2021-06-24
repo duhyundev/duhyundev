@@ -1,36 +1,143 @@
-.list-group {
+.sidebarComponents {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  height: 100%;
+  padding: 0;
+  row-gap: 56px;
 
-  div {
+  .account {
     align-items: center;
-    border-radius: 8px;
-    box-sizing: border-box;
+    column-gap: 12px;
     display: flex;
     flex-direction: row;
-    height: 48px;
-    justify-content: space-between;
-    left: 0;
-    padding: 12px 16px;
-    position: static;
-    top: 0;
-    width: 330px;
-  }
+    padding: 0;
 
-  span {
-    color: #5a6474;
-    font-size: 18px;
-    line-height: 24px;
-    width: 218px;
-  }
-  .list {
-    &-active {
+    .picture-user {
+      height: 64px;
+      width: 64px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+      padding: 4px 0;
+
+      .welcome {
+        color: #757d8a;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      .username {
+        color: #5a6474;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+      }
+    }
+
+    button {
+      align-items: center;
       background: #fff;
       border: 1px solid #e1e3e6;
+      border-radius: 8px;
+      box-shadow: 0 4px 2px -2px rgba(27, 46, 94, 0.02);
+      box-sizing: border-box;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      height: 48px;
+      justify-content: center;
+      padding: 12px 60px;
+      padding: 0;
+      width: 64px;
     }
-    &-inactive {
-      background: #e1e3e6;
+  }
+
+  .body {
+    flex-grow: 100;
+
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+
+      div {
+        align-items: center;
+        border-radius: 8px;
+        box-sizing: border-box;
+        column-gap: 12px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        justify-content: space-between;
+        left: 0;
+        padding: 12px 16px;
+        position: static;
+        top: 0;
+        width: 330px;
+      }
+
+      span {
+        color: #5a6474;
+        flex-grow: 1;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .list {
+        &-active {
+          background: #fff;
+          border: 1px solid #e1e3e6;
+          cursor: default;
+        }
+        &-inactive {
+          background: #e1e3e6;
+          cursor: not-allowed;
+
+          path {
+            fill: white;
+          }
+        }
+
+        path {
+          fill: #c3c7ce;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    div {
+      align-items: center;
+      border-radius: 8px;
+      box-sizing: border-box;
+      column-gap: 12px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      height: 48px;
+      justify-content: space-between;
+      left: 0;
+      padding: 12px 16px;
+      position: static;
+      top: 0;
+      width: 330px;
+    }
+
+    span {
+      color: #5a6474;
+      flex-grow: 1;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 }
