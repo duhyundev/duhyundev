@@ -1,64 +1,31 @@
 import './HomePage.scss';
 import { OnlyLeftSideBarLayout } from '@layouts';
-import Activity from '@assets/icons/activity.svg';
-import { ReactComponent as MenuIcon } from '@assets/icons/menu.svg';
-import HomeIcon from '@assets/icons/home.svg';
-import BookIcon from '@assets/icons/book.svg';
-import PeopleIcon from '@assets/icons/people.svg';
-import DevonLane from '@assets/icons/UserPic/devon-lane.svg';
-import GoogleIcon from '@assets/icons/google.svg';
-import MessageCircleIcon from '@assets/icons/message-circle.svg';
-import priceTagIcon from '@assets/icons/price-tag.svg';
+import { ReactComponent as ActivityIcon } from '@assets/icons/activity.svg';
+import { ReactComponent as HomeIcon } from '@assets/icons/home.svg';
+import { ReactComponent as BookIcon } from '@assets/icons/book.svg';
+import { ReactComponent as PeopleIcon } from '@assets/icons/people.svg';
+import { ReactComponent as MessageCircleIcon } from '@assets/icons/message-circle.svg';
+import { ReactComponent as PriceTagIcon } from '@assets/icons/price-tag.svg';
+import { Misc, ListElement } from '@components';
 
 const HomePage = () => {
   return (
     <OnlyLeftSideBarLayout
       sidebar={
         <div className="sidebarComponents">
-          <div className="account">
-            <img className="picture-user" src={DevonLane} />
-            <section>
-              <div className="welcome">안녕하세요</div>
-              <div className="username">낯선사람51345</div>
-            </section>
-            <button>
-              <img src={GoogleIcon} />
-            </button>
-          </div>
+          <Misc.Account />
           <section className="body">
             <div className="list-group">
-              <div className="list-active">
-                <img src={HomeIcon} />
-                <span>홈</span>
-                <MenuIcon />
-              </div>
-              <div className="list">
-                <img src={Activity} />
-                <span>스토리</span>
-                <MenuIcon />
-              </div>
-              <div className="list">
-                <img src={BookIcon} />
-                <span>포스팅</span>
-                <MenuIcon />
-              </div>
-              <div className="list-inactive">
-                <img src={PeopleIcon} />
-                <span>네트워크</span>
-                <MenuIcon />
-              </div>
+              <ListElement status="selected" hasMenu={true} icon={<HomeIcon />} text="홈" />
+              <ListElement status="normal" hasMenu={true} icon={<ActivityIcon />} text="스토리" />
+              <ListElement status="normal" hasMenu={true} icon={<BookIcon />} text="포스팅" />
+              <ListElement status="disabled" hasMenu={true} icon={<PeopleIcon />} text="네트워크" />
             </div>
           </section>
 
           <div className="footer">
-            <div className="list">
-              <img src={priceTagIcon} />
-              <span>라이센스 & 저작권</span>
-            </div>
-            <div className="list">
-              <img src={MessageCircleIcon} />
-              <span>문의하기</span>
-            </div>
+            <ListElement status="normal" icon={<PriceTagIcon />} text="라이센스 & 저작권" />
+            <ListElement status="normal" icon={<MessageCircleIcon />} text="문의하기" />
           </div>
         </div>
       }
