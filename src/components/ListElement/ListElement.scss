@@ -16,33 +16,41 @@
     width: 330px;
 
     > span {
-      color: #5a6474;
       flex-grow: 1;
       font-size: 18px;
       line-height: 24px;
     }
+  }
 
-    &-selected {
-      background: #fff;
-      border: 1px solid #e1e3e6;
-      cursor: default;
-    }
-    &-disabled {
-      background: #e1e3e6;
-      cursor: not-allowed;
+  .selected {
+    background: #fff;
+    border: 1px solid #e1e3e6;
+    color: #5a6474;
+    cursor: default;
 
-      .icon-menu {
-        path {
-          fill: white;
-        }
+    .icon {
+      path {
+        fill: #5a6474;
       }
     }
+  }
+  .disabled {
+    background: #e1e3e6;
+    color: #757d8a;
+    cursor: not-allowed;
 
-    &-normal {
-      .icon-menu {
-        path {
-          fill: #c3c7ce;
-        }
+    .icon-menu {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  .normal {
+    color: #757d8a;
+    .icon-menu {
+      path {
+        fill: #c3c7ce;
       }
     }
   }

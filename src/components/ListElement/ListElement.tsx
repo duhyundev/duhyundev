@@ -1,20 +1,13 @@
 import './ListElement.scss';
-import { ReactComponent as MenuIcon } from '@assets/icons/menu.svg';
+import { Misc } from '@components';
 import classNames from 'classnames';
 
-type Props = {
-  icon: any;
-  text: string;
-  status: 'selected' | 'disabled' | 'normal';
-  hasMenu?: boolean;
-};
-
-const ListElement = (props: Props) => (
+const ListElement = ({ icon, text, hasMenu = false, status }: ListElementProps) => (
   <div className="ListElement">
-    <div className={classNames('element', `element-${props.status}`)}>
-      {props.icon}
-      <span>{props.text}</span>
-      {props.hasMenu && <MenuIcon />}
+    <div className={classNames('element', `${status}`)}>
+      <Misc.Icon className="icon" icon={icon} />
+      <span>{text}</span>
+      {hasMenu && <Misc.Icon className="icon-menu" icon="menu" />}
     </div>
   </div>
 );

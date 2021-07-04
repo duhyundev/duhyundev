@@ -8,7 +8,7 @@ const Account = () => {
       <img className="picture-user" src={DevonLane} />
       <section>
         <div className="welcome">안녕하세요</div>
-        <div className="username">낯선사람51345</div>
+        <strong className="username">낯선사람51345</strong>
       </section>
       <button>
         <img src={GoogleIcon} />
