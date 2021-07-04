@@ -1,0 +1,23 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  row-gap: 56px;
+
+  .body {
+    flex-grow: 100;
+
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}

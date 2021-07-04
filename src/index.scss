@@ -1,11 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  border: 1px solid #c3c7ce;
-  border-radius: 8px;
-  font-family: 'DM Sans';
+  font-family: 'RIDIBatang', 'DM Sans';
   height: 100vh;
   margin: 0;
 }

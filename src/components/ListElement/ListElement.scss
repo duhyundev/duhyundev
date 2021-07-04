@@ -1,0 +1,57 @@
+.ListElement {
+  .element {
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    column-gap: 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    justify-content: space-between;
+    left: 0;
+    padding: 12px 16px;
+    position: static;
+    top: 0;
+    width: 330px;
+
+    > span {
+      flex-grow: 1;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .selected {
+    background: #fff;
+    border: 1px solid #e1e3e6;
+    color: #5a6474;
+    cursor: not-allowed;
+
+    .icon {
+      path {
+        fill: #5a6474;
+      }
+    }
+  }
+  .disabled {
+    background: #e1e3e6;
+    color: #757d8a;
+    cursor: not-allowed;
+
+    .icon-menu {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  .normal {
+    color: #757d8a;
+    .icon-menu {
+      path {
+        fill: #c3c7ce;
+      }
+    }
+  }
+}
