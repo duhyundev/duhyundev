@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51f189a4-aa53-4424-93b7-9739cf0e92db/deploy-status)](https://app.netlify.com/sites/duhyunkim/deploys)
+
 ### Hi there 👋
 
 <!--
