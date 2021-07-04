@@ -5,6 +5,7 @@ type ListElementProps = {
   text: string;
   status: 'selected' | 'disabled' | 'normal';
   hasMenu?: boolean;
+  onClick: () => void;
 };
 
 type IconProps = {
